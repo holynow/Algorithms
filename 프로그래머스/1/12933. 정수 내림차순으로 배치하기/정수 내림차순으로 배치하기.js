@@ -1,3 +1,3 @@
-function solution(n) {
-  return parseInt(String(n).split('').sort((a, b) => b-a).join(''));
+function solution(number) {
+  return parseInt(String(number).split('').sort((a, b) => b-a).join(''));
 }
