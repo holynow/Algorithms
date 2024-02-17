@@ -1,8 +1,6 @@
 const solution = (n) => {
-    let result = 0;
-    let answer = String(n);
-    for(let i = 0; i < answer.length; i++){
-       result += ~~(answer[i]);
-    }
-    return result;
-}
+    let sum = 0;
+    const arr = Array.from(String(n));
+    for(num of arr) sum += ~~(num);
+    return sum;
+} 
