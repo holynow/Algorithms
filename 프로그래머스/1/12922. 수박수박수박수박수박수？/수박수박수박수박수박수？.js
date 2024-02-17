@@ -1,11 +1,7 @@
-function solution(n) {
-    var answer = '';
-    for(let i = 0; i < n; i++) {
-      if(i % 2 == 0) {
-        answer += "수"
-      }else{
-        answer += "박"
-      }
+const solution = (n) => {
+    let result = '';
+    for (let i = 1; i <= n; i++){
+        i%2===0 ? result += "박" : result += "수";
     }
-    return answer;
+    return result;
 }
