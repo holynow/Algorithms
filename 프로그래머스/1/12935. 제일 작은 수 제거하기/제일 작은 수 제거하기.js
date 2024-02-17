@@ -1,11 +1,8 @@
 function solution(arr) {
-
-  if (arr.length <= 1){
-    return [-1];
-  } else {
-    arr.splice(arr.indexOf(Math.min(...arr)),1)
-    answer = arr;
-    
-  }
-  return answer;
+    if(arr.length > 1){
+        arr = arr.filter((e)=> e !== Math.min(...arr));
+       return arr;
+    } else {
+        return [-1]
+    }
 }
