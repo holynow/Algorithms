@@ -1,11 +1,7 @@
-const solution = (absolutes, signs) => {
+const solution = (a, b) => {
     let result = 0;
-    for (let i = 0; i < absolutes.length; i++){
-        if(signs[i] === true) {
-            result += absolutes[i];
-        } else {
-            result += -absolutes[i];
-        }
-    }
-    return result 
+    a.forEach((e, i) => {
+       b[i] ? result += e : result -= e;
+    });
+    return result;
 }
