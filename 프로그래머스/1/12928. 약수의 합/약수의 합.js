@@ -1,11 +1,7 @@
 const solution = (n) => {
-    let index = 1;
     let sum = 0;
-    while(index <= n){
-       if ((n % index === 0)) {
-        sum += index;
-       }
-       index ++;
+    for(let i = 1; i <= n; i++){
+        if (n % i === 0) sum += i;
     }
     return sum;
 }
