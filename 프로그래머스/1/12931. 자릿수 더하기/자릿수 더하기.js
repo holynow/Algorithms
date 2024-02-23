@@ -3,4 +3,4 @@ const solution = (n) => {
     const arr = Array.from(String(n));
     for(num of arr) sum += ~~(num);
     return sum;
-} 
+};
