@@ -4,4 +4,4 @@ const solution = (arr) => {
         sum += int;
     }
     return sum / arr.length;
-}
+};
