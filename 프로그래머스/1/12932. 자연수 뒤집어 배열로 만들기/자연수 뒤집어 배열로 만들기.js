@@ -5,4 +5,4 @@ function solution(n) {
     answer.push(~~(m[i]));
   }
     return answer;
-}
+};
