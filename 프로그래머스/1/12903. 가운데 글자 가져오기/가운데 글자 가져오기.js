@@ -1,9 +1,4 @@
-function solution(s) {
-    var answer = '';
-    if (s.length % 2 == 0) {
-      return s.substr(s.length/2-1, 2)
-    }else{
-      return s.substr(s.length/2, 1)
-    }
-    return answer;
-}
+const solution = (s) => {
+let size = Math.round(s.length/2);
+return s.length % 2 === 0 ? s.slice(size-1, size+1) : s.slice(size-1, size);
+};
