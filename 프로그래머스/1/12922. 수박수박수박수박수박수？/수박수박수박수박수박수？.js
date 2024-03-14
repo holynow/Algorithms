@@ -4,4 +4,4 @@ const solution = (n) => {
         i%2===0 ? result += "박" : result += "수";
     }
     return result;
-}
+};
