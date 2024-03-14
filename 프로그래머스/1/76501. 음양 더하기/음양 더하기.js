@@ -3,5 +3,5 @@ const solution = (a, b) => {
     a.forEach((e, i) => {
        b[i] ? result += e : result -= e;
     });
-    return result;
+    return result
 }
